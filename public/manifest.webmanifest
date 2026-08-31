@@ -1,0 +1,20 @@
+{
+  "name": "Falling Blocks",
+  "short_name": "Blocks",
+  "description": "Ein schnelles, vollständig lokales Blockspiel für deinen Browser.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#090c15",
+  "theme_color": "#090c15",
+  "lang": "de",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
