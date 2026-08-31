@@ -9,7 +9,7 @@
     "dev": "vinext dev",
     "build": "vinext build",
     "start": "wrangler dev --config dist/server/wrangler.json",
-    "start:docker": "wrangler dev --config dist/server/wrangler.json --ip 0.0.0.0 --port 8080",
+    "start:docker": "wrangler dev --local --no-show-interactive-dev-session --config dist/server/wrangler.json --ip 0.0.0.0 --port 8080",
     "lint": "oxlint app lib tests",
     "format": "oxfmt",
     "typecheck": "tsc --noEmit",

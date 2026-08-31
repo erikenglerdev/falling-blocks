@@ -1,6 +1,8 @@
+name: falling-blocks
+
 services:
   falling-blocks:
     build: .
     restart: unless-stopped
     ports:
-      - "8080:8080"
+      - "127.0.0.1:3010:8080"

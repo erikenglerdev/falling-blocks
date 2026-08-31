@@ -36,7 +36,7 @@ npm run check
 docker compose up --build -d
 ```
 
-Die Anwendung ist anschließend unter `http://localhost:8080` erreichbar. Der
+Die Anwendung ist anschließend unter `http://localhost:3010` erreichbar. Der
 Container liefert nur die PWA-Dateien aus; die komplette Spiellogik und alle
 Spielstände bleiben auf dem jeweiligen Gerät.
 
