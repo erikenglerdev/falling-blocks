@@ -49,6 +49,8 @@
   --ambient-secondary: rgb(114 246 207 / 9%);
   --shadow-color: rgb(0 0 0 / 38%);
   --cell-border: rgb(255 255 255 / 3.3%);
+  --ghost-border: #858da1;
+  --ghost-background: #323847;
   --success-accent: #72f6cf;
   --trophy-accent: #ffb45f;
   --clear-burst-core: #ffffff;
@@ -85,6 +87,8 @@
   --ambient-secondary: rgb(12 90 72 / 10%);
   --shadow-color: rgb(40 48 76 / 16%);
   --cell-border: rgb(23 26 42 / 24%);
+  --ghost-border: #596477;
+  --ghost-background: #cbd1dc;
   --success-accent: #0c5a48;
   --trophy-accent: #8a4500;
   --clear-burst-core: #ffffff;
@@ -158,10 +162,10 @@ button { touch-action: manipulation; }
 .board { position: relative; display: grid; grid-template-columns: repeat(10, 1fr); gap: 2px; margin: 0; }
 .board-cell { aspect-ratio: 1; border: 1px solid var(--cell-border); border-radius: 0.14rem; background: var(--cell-empty); }
 .board-cell.is-filled { border-color: rgb(255 255 255 / 18%); background: var(--piece-color); box-shadow: inset 0 0 0 1px rgb(255 255 255 / 8%), inset 0 -6px 10px rgb(0 0 0 / 12%); }
-.board-cell.is-ghost { border: 1px solid color-mix(in srgb, var(--piece-color) 65%, transparent); background: color-mix(in srgb, var(--piece-color) 14%, transparent); box-shadow: none; }
+.board-cell.is-ghost { border: 1px solid var(--ghost-border); background: var(--ghost-background); box-shadow: none; }
 :root[data-theme='light'] .mini-cell.is-filled { border: 1px solid rgb(23 26 42 / 55%); box-shadow: inset 0 0 0 1px rgb(255 255 255 / 42%), inset 0 -4px 8px rgb(23 26 42 / 16%); }
 :root[data-theme='light'] .board-cell.is-filled { border-color: rgb(23 26 42 / 55%); box-shadow: inset 0 0 0 1px rgb(255 255 255 / 42%), inset 0 -6px 10px rgb(23 26 42 / 16%); }
-:root[data-theme='light'] .board-cell.is-ghost { border-width: 2px; border-color: color-mix(in srgb, var(--piece-color) 58%, #29334a); background: color-mix(in srgb, var(--piece-color) 28%, var(--cell-empty)); }
+:root[data-theme='light'] .board-cell.is-ghost { border-width: 2px; border-color: var(--ghost-border); }
 [data-piece='I'] { --piece-color: #49dff2; }
 [data-piece='J'] { --piece-color: #6688ff; }
 [data-piece='L'] { --piece-color: #ffad56; }
